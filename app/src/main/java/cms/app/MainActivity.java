@@ -37,6 +37,9 @@ import cms.app.cms.teacher.ui.TeacherActivity;
 import cms.app.cms.teacher.ui.TeacherCourseActivity;
 import cms.app.net.CMSClient;
 
+/*
+* zqzess
+* */
 public class MainActivity extends AppCompatActivity {
 
     CheckBox checkBox;
