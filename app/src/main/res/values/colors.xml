@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="courseTable1">#FF9800</color>
+    <color name="courseTable2">#9C27B0</color>
+    <color name="courseTable3">#03A9F4</color>
+    <color name="courseTable4">#F44336</color>
+    <color name="courseTable5">#8BC34A</color>
+    <color name="courseTable6">#F8F8FF</color>
+    <color name="courseTable7">#000000</color>
+    <color name="courseTable8">#40E0D0</color>
+    <color name="courseTable9">#E0FFFF</color>
+
+</resources>

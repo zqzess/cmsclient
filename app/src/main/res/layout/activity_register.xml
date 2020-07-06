@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--标题-->
+            <TextView
+                android:id="@+id/register_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户注册"
+                android:textSize="60sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp" />
+            <!--单选框-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_register_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_register_Student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:checked="false"
+                        android:text="学生"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_register_Teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="教师" />
+                </RadioGroup>
+            </LinearLayout>
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="用户名"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/edit_register_UserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="输入学号或工号"
+                    android:imeOptions="actionGo" />
+            </LinearLayout>
+            <!--姓名 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="姓名"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_register_UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请输入姓名"
+                    android:imeOptions="actionGo" />
+            </LinearLayout>
+            <!--手机-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="手机"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_register_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="请输入手机号"
+                    android:imeOptions="actionGo" />
+            </LinearLayout>
+            <!--班级-->
+            <LinearLayout
+                android:id="@+id/layout_reg_class"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="班级"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView_register_Class"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:hint="请选择班级" />
+
+                <Button
+                    android:id="@+id/btn_register_Choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="选择" />
+            </LinearLayout>
+            <!--密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="密码"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_register_Pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"
+                    android:imeOptions="actionGo" />
+                <!--                <TextView
+                                    android:id="@+id/viewcheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_action_check"
+                                    android:drawableTint="@color/courseTable5"
+                                    android:visibility="gone"/>
+                                <TextView
+                                    android:id="@+id/viewcheckflase"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_action_checkfalse"
+                                    android:drawableTint="@color/courseTable4"
+                                    android:visibility="gone"/>-->
+            </LinearLayout>
+            <!--确认密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="确认密码"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edit_register_VerifyPwd"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint="再次输入密码"
+                    android:imeOptions="actionDone" />
+
+                <TextView
+                    android:id="@+id/view_regist_pwd_check2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_action_check"
+                    android:drawableTint="@color/courseTable5"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/view_regist_pwd_checkflase2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/ic_action_checkfalse"
+                    android:drawableTint="@color/courseTable4"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--注册按钮-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:id="@+id/btn_reg_register"
+        android:textSize="20sp"></Button>
+
+</LinearLayout>

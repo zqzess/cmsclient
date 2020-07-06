@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="管理模块"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="用户审批"
+            android:id="@+id/btn_admin_user_approval"
+            android:drawableLeft="@drawable/ic_action_account"
+            android:drawableTint="@color/courseTable7"
+            android:drawablePadding="30dp" />
+
+        <Button
+            android:id="@+id/btn_admin_main_activity_usersearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="用户查询"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:drawableTint="@color/courseTable7"
+            android:drawablePadding="30dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

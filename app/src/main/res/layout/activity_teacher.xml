@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="教师模块"
+        android:textSize="40sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_teacher_mycourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的课程"
+        android:textSize="20sp"
+        android:gravity="center" />
+</LinearLayout>

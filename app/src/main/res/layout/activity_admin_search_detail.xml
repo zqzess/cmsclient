@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户信息"
+        android:textSize="50sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_admin_search_detail_type1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="用户类型"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:id="@+id/textview_admin_search_detail_type"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_admin_search_detail_type2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="用户类型"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_admin_search_detail_typegroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_admin_search_detail_type0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学生" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_admin_search_detail_type1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="教师" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="用户名"
+                    android:textSize="22sp"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:id="@+id/textview_admin_search_detail_userid"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="姓名"
+
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:id="@+id/textview_admin_search_detail_username"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="电话"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:id="@+id/textview_admin_search_detail_phone"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layout_admin_search_detail_Class"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="班级"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:id="@+id/textview_admin_search_detail_class"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_admin_search_detail_chooseclass"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_admin_search_detail_chooseclass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="密码"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:id="@+id/textview_admin_search_detail_pwd"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/layout_admin_search_detail_State1"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="账户状态"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:id="@+id/textview_admin_search_detail_State"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layout_admin_search_detail_State2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="账户状态"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_admin_search_detail_stategroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_admin_search_detail_state0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未审核" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_admin_search_detail_state1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审核通过" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_admin_search_detail_state2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审核不通过" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_admin_search_detail_edit"
+            android:drawableRight="@drawable/ic_action_edit"
+            android:drawableTint="@color/courseTable3"
+            android:text="编辑"
+            android:textColor="@color/courseTable8"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_admin_search_detail_drop"
+            android:text="删除"
+            android:textColor="@color/courseTable8"
+            android:drawableRight="@drawable/ic_action_drop"
+            android:drawableTint="@color/courseTable3"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
