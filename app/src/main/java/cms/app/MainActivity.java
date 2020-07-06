@@ -38,7 +38,7 @@ import cms.app.cms.teacher.ui.TeacherCourseActivity;
 import cms.app.net.CMSClient;
 
 /*
-* zqzess
+* author zqzess
 * */
 public class MainActivity extends AppCompatActivity {
 
